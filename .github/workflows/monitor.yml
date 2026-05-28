@@ -3,6 +3,7 @@ name: 八大网站新闻每小时监控
 on:
   schedule:
     - cron: '*/10 * * * *'
+      timezone: "Asia/Shanghai"
   workflow_dispatch:
   repository_dispatch:
     types: [run-monitor]
